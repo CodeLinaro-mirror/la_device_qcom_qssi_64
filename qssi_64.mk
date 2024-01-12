@@ -144,6 +144,8 @@ TARGET_USES_NQ_NFC := true
 PRODUCT_CHARACTERISTICS := nosdcard
 BOARD_FRP_PARTITION_NAME := frp
 
+PRODUCT_PACKAGES += qspa.rc qspa_default.rc
+
 #Android EGL implementation
 PRODUCT_PACKAGES += libGLES_android
 PRODUCT_PACKAGES += fsck.exfat
@@ -308,6 +310,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 #enable virtualization service, please verify if virtualization needs to be updated
 #for low ram targets
 $(call inherit-product, packages/modules/Virtualization/apex/product_packages.mk)
+
+# Enable allowlist for several aosp packages that should not be scanned in a "stopped" state
+# Some CTS test case failed after enabling feature config_stopSystemPackagesByDefault
+PRODUCT_PACKAGES += initial-package-stopped-states-aosp.xml
 
 ###################################################################################
 # This is the End of target.mk file.
