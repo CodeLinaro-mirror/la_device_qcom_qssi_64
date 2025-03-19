@@ -18,7 +18,6 @@ TARGET_SUPPORTS_64_BIT_ONLY := true
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
 RELAX_USES_LIBRARY_CHECK := true
-NEED_AIDL_NDK_PLATFORM_BACKEND := true
 
 #Enable product partition Java I/F. It is automatically set to true if
 #the shipping API level for the target is greater than 29
@@ -51,7 +50,7 @@ BOARD_AVB_ENABLE := true
 
 # Retain the earlier default behavior i.e. ota config (dynamic partition was disabled if not set explicitly), so set
 # SHIPPING_API_LEVEL to 28 if it was not set earlier (this is generally set earlier via build.sh per-target)
-SHIPPING_API_LEVEL := 35
+SHIPPING_API_LEVEL := 36
 
 $(call inherit-product-if-exists, vendor/qcom/defs/product-defs/system/cne_url*.mk)
 
