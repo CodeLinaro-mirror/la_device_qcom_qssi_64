@@ -17,5 +17,17 @@ For Example:
          <package-name packagename ="p4"/>
      </qti-allow-implicit-broadcast>
 -->
+     <qti-allow-implicit-broadcast action="android.intent.action.PACKAGE_ADDED">
+         <package-name packagename="com.qualcomm.qti.workloadclassifier"/>
+     </qti-allow-implicit-broadcast>
+     <qti-allow-implicit-broadcast action="android.intent.action.PACKAGE_REMOVED">
+         <package-name packagename="com.qualcomm.qti.workloadclassifier"/>
+     </qti-allow-implicit-broadcast>
+         <qti-allow-implicit-broadcast action="android.intent.action.PACKAGE_REPLACED">
+         <package-name packagename="com.qualcomm.qti.workloadclassifier"/>
+     </qti-allow-implicit-broadcast>
+     <qti-allow-implicit-broadcast action="com.qualcomm.qti.workloadclassifier.RESCAN_ALL">
+         <package-name packagename="com.qualcomm.qti.workloadclassifier"/>
+     </qti-allow-implicit-broadcast>
 
  </config>
