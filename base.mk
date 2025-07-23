@@ -696,7 +696,9 @@ PRODUCT_PACKAGES := \
     VideoEditor \
     SnapdragonLauncher \
     FrameworksUtilsSysService \
-    libqesdk_ndk_platform.qti
+    libqesdk_ndk_platform.qti \
+    frameworks_utils_service.sh \
+    frameworks_utils_service.rc
 
 PRODUCT_PACKAGES += \
     libsnapdragon_services_adk.qti \
