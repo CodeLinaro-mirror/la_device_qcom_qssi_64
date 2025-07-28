@@ -14,6 +14,9 @@ PRODUCT_NO_BIONIC_PAGE_SIZE_MACRO := true
 #Flag to Enable 64 bit only configuration
 TARGET_SUPPORTS_64_BIT_ONLY := true
 
+#Enable vm support
+TARGET_ENABLE_VM_SUPPORT := false
+
 # Skip VINTF checks for kernel configs since we do not have kernel source
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
