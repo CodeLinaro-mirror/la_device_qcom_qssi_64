@@ -100,6 +100,9 @@ PRODUCT_SOONG_NAMESPACES += \
 VENDOR_QTI_PLATFORM := qssi_64
 VENDOR_QTI_DEVICE := qssi_64
 
+#enble NO_TELEPHONY
+TARGET_NO_TELEPHONY := true
+
 #QSSI 64 bit configuration
 #Single system image project structure
 TARGET_USES_QSSI := true
