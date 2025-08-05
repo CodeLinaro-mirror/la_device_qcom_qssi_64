@@ -138,6 +138,7 @@ TARGET_USES_RRO := true
 
 TARGET_USES_NQ_NFC := true
 
+TARGET_NO_GMS_PACKAGES := true
 
 # default is nosdcard, S/W button enabled in resource
 PRODUCT_CHARACTERISTICS := nosdcard
