@@ -698,7 +698,8 @@ PRODUCT_PACKAGES := \
     FrameworksUtilsSysService \
     libqesdk_ndk_platform.qti \
     frameworks_utils_service.sh \
-    frameworks_utils_service.rc
+    frameworks_utils_service.rc \
+    libfwk_lazy_service
 
 PRODUCT_PACKAGES += \
     libsnapdragon_services_adk.qti \
