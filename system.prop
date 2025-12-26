@@ -168,3 +168,12 @@ ro.launcher.blur.appLaunch=0
 
 # Enable FMD mode
 ro.bluetooth.finder.supported=true
+
+# Preload GPU composition shader cache for solid_layers, image_layers, clipped_layers.
+debug.sf.prime_shader_cache.hole_punch=0
+debug.sf.prime_shader_cache.solid_dimmed_layers=0
+debug.sf.prime_shader_cache.image_dimmed_layers=0
+debug.sf.prime_shader_cache.shadow_layers=0
+debug.sf.prime_shader_cache.pip_image_layers=0
+debug.sf.prime_shader_cache.transparent_image_dimmed_layers=0
+debug.sf.prime_shader_cache.clipped_dimmed_image_layers=0
