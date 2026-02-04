@@ -18,6 +18,10 @@ TARGET_SUPPORTS_64_BIT_ONLY := true
 TARGET_BOARD_TYPE := drone
 TARGET_BOARD_DRONE := true
 
+ifeq ($(strip $(TARGET_BOARD_TYPE)), drone)
+TARGET_NO_GMS_PACKAGES := true
+endif
+
 # Skip VINTF checks for kernel configs since we do not have kernel source
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
