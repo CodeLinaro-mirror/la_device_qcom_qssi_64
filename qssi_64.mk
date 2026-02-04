@@ -21,6 +21,7 @@ TARGET_BOARD_DRONE := true
 ifeq ($(strip $(TARGET_BOARD_TYPE)), drone)
 TARGET_NO_GMS_PACKAGES := true
 TARGET_USES_CROSVM := false
+TARGET_NO_TELEPHONY := true
 endif
 
 # Skip VINTF checks for kernel configs since we do not have kernel source
