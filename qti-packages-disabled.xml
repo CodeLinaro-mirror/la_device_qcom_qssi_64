@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+    SPDX-License-Identifier: BSD-3-Clause-Clear
+  -->
+
+<config>
+    <!-- Contacts App should be disabled on drone device. -->
+    <disabled-in-sku package="com.android.contacts" />
+</config>
