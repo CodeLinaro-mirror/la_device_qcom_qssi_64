@@ -107,6 +107,7 @@ use.voice.path.for.pcm.voip=true
 
 # system prop for NFC DT
 ro.nfc.port=I2C
+persist.nfc.secure_nfc=true
 
 #initialize QCA1530 detection
 sys.qca1530=detect
@@ -159,8 +160,6 @@ ro.media.recorder-max-base-layer-fps = 60
 
 #Battery Property
 ro.charger.enable_suspend = 1
-#Disable MTE Async for system server
-arm64.memtag.process.system_server=off
 
 # Disable blur on app launch
 ro.launcher.blur.appLaunch=0
