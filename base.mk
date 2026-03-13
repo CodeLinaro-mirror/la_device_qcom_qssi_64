@@ -927,3 +927,8 @@ else
 endif #ifneq "$(wildcard vendor/qcom/proprietary/commonsys/bt/bt_adv_audio)" ""
 
 PRODUCT_PACKAGES_DEBUG += MicrodroidDemoApp
+
+ifeq ($(TARGET_NO_TELEPHONY),true)
+PRODUCT_COPY_FILES += \
+    device/qcom/qssi_64/qti-packages-disabled.xml:product/etc/sysconfig/qti-packages-disabled.xml
+endif
