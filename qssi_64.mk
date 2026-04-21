@@ -8,9 +8,6 @@ TARGET_BOOTLOADER_BOARD_NAME := qssi_64
 #Align all 64-bit userspace ELF binaries to 16 KB
 PRODUCT_MAX_PAGE_SIZE_SUPPORTED := 16384
 
-#IOT platform
-TARGET_QCOM_IOT := true
-
 #Enable AOSP to be page size agnostic
 PRODUCT_NO_BIONIC_PAGE_SIZE_MACRO := true
 
