@@ -886,8 +886,6 @@ PRODUCT_PACKAGES_DEBUG += \
     init.qti.debug-trinket.sh \
     init.qti.debug-bengal.sh \
 
-PRODUCT_PROPERTY_OVERRIDES += ro.camera.default_app_social_media_parity_enabled=true
-
 PRODUCT_PACKAGES += liboemaids_system
 PRODUCT_PACKAGES += liboemaids_vendor
 PRODUCT_PACKAGES += android.hardware.health@2.0-service
