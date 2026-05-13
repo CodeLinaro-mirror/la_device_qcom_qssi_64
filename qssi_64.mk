@@ -11,6 +11,14 @@ PRODUCT_MAX_PAGE_SIZE_SUPPORTED := 16384
 #IOT platform
 TARGET_QCOM_IOT := true
 
+ifeq ($(TARGET_QCOM_IOT), true)
+
+# Enable telephony feature list for IOT
+TELEPHONY_FEATURE_LIST_ENABLED := true
+
+include device/qcom/iot-feature-config/iotfeatureconfig.mk
+endif
+
 #Enable AOSP to be page size agnostic
 PRODUCT_NO_BIONIC_PAGE_SIZE_MACRO := true
 
