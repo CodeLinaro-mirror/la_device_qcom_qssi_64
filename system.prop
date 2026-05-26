@@ -166,3 +166,5 @@ ro.launcher.blur.appLaunch=0
 
 #System Enable QCOM enhanced feature
 ro.vendor.qti.va_aosp.support=1
+
+ro.camera.default_app_social_media_parity_enabled=true
