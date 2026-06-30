@@ -96,5 +96,6 @@
     <!-- These are location components that need to freely run in the background -->
     <allow-in-power-save package="com.qualcomm.location" />
     <allow-in-power-save package="vendor.qti.frameworks.utils" />
+    <allow-in-power-save package="vendor.qti.framework.utils" />
     <hidden-api-whitelisted-app package="com.qti.service.colorservice" />
 </config>
