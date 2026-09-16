@@ -18,7 +18,10 @@ TARGET_SUPPORTS_64_BIT_ONLY := true
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
 RELAX_USES_LIBRARY_CHECK := true
-
+TARGET_QCOM_IOT_QRS := true
+ifeq ($(TARGET_QCOM_IOT_QRS), true)
+$(call soong_config_set,qcomfeatureconfig,target_qrs,$(TARGET_QCOM_IOT_QRS))
+endif
 #Enable product partition Java I/F. It is automatically set to true if
 #the shipping API level for the target is greater than 29
 PRODUCT_ENFORCE_PRODUCT_PARTITION_INTERFACE := true
